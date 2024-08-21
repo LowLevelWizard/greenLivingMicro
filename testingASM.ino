@@ -2,6 +2,8 @@
 
 extern "C"{
   void start(byte);
+  void led(byte);
+  byte math(byte);
 }
 
 void setup() {
