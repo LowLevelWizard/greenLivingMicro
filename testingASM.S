@@ -13,7 +13,7 @@ start:
     RET             ; return to setup() function
 
 led:
-    ; Value passed in in R24
+                    ; Value passed in in R24
     CPI R24, 0x00   ; [Compare immediate] (Passed value) to 0
     BREQ ledOFF     ; [Branch on Equal] if equal to lefOFF
     SBI PORTB, 4    ; sets pin D12 to high
